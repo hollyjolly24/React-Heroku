@@ -2,6 +2,7 @@ import React, { useRef} from "react";
 import contactUsStyles from './contact.module.css';
 import emailjs from "emailjs-com"
 import Footer from "../footer/footer";
+import Navbar from "../navbar/Navbar";
 
 export default function Contact() {
     const form = useRef();
@@ -18,10 +19,9 @@ export default function Contact() {
           e.target.reset();
       };
 
-    return(
-
-        <>
-       
+    return(   
+        <div className={contactUsStyles.bGround}>
+            <Navbar/>
         <div className={contactUsStyles.contactForm}>
 
         <h1 className={contactUsStyles.contactHeader}>
@@ -53,8 +53,10 @@ export default function Contact() {
                 </button>
                 
             </form>
-        </div>
-        <Footer/>
-        </>
+            </div>
+            <Footer/>
+            </div> 
+      
+
         )
 }

@@ -1,25 +1,25 @@
 
 
-body {
-    background-color: rgb(158, 158, 158);
+.homescreenbackground {
+    background-image: url('https://images.unsplash.com/photo-1523287562758-66c7fc58967f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyZWVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
+    margin: 0;
+    padding: 0;
+   
 }
-
-
-
   
   .rotatingTextAdjective {
     font-family: "font-family: 'Playfair Display', serif";
-    color: rgb(2, 68, 209);
+    color: rgb(0, 43, 134);
     font-size: 150px;
     font-style: normal;
     font-weight: 700;
     left: 0;
     margin-bottom: 0;
-    margin-top: 50px;
+    margin-top: 150px;
     opacity: 0;
     position: absolute;
     right: 0;
@@ -92,13 +92,13 @@ body {
     font-family: 'font-family: 'Playfair Display', serif';
     font-weight: bold;
     font-size: 125px;
-    color: rgb(2, 68, 209);
+    color: rgb(0, 43, 134);
 
   } 
 
   .learnMore {
     border-radius: 2rem;
-    background-color:rgb(2, 68, 209);
+    background-color:rgb(0, 43, 134);
     border:rgb(136, 137, 224);
     padding: 20px;
     width: 200px;
@@ -110,7 +110,8 @@ body {
     position: relative;
     transition: 0.5s;
     margin-left: 575px;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 75px;
     justify-content: center;
     text-decoration: none;
     text-align: center;

@@ -31,7 +31,7 @@ function Navbar() {
             Home
           </Link>   
 
-          <Link to='/aboutUs' className={navbarstyles.learnMore} onclick={() => history.push("/aboutUs")}>
+          <Link to='/aboutUs' className={navbarstyles.aboutUs} onclick={() => history.push("/aboutUs")}>
             About Us
           </Link>   
 
