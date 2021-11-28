@@ -1,0 +1,63 @@
+
+.nav {
+  background: #cdcdcd;
+  height: 90px;
+  display: flex;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo{
+  text-align: left;
+}
+
+.career {
+  color: blue;
+  text-decoration: none;
+}
+
+.lift{
+  color: blue;
+  text-decoration: none;
+
+}
+
+.links {
+  justify-content: right;
+}
+
+
+.mainSection {
+  color: blue;
+  text-decoration: none;
+  justify-content: right;
+
+}
+
+.aboutUs {
+  color: blue;
+  text-decoration: none;
+  justify-content: right;
+
+
+}
+
+.login {
+  color: blue;
+  text-decoration: none;
+  justify-content: right;
+
+
+}
+
+.signup {
+  color: blue;
+  text-decoration: none;
+  text-align: right;
+
+}
+
+
+
