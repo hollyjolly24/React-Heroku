@@ -1,0 +1,61 @@
+
+.nav {
+    background: #e9e9e9;
+    height: 70px;
+  }
+  
+  .logo{
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-family: righteous, cursive;
+  }
+  
+  .lift {
+    animation: slideUp ease .7s forwards;
+  }
+  
+  @keyframes slideUp {
+    0% {transform: translateY(20px);}
+    100% {transform: translateY(0px);opacity:1;}
+  }
+  
+    .links {
+    justify-content: right;
+    text-align: right;
+  }
+  
+  
+  .career {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  .lift{
+    color: blue;
+    text-decoration: none;
+  
+  }
+  
+  .mainSection, .aboutUs, .login, .signup {
+    color: blue;
+    text-decoration: none;
+    text-align: right;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+  
+  }
+  
+  .mainSection:hover, .aboutUs:hover, .login:hover, .signup:hover {
+    color: purple;
+  
+  }
+  
+  
+  

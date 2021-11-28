@@ -1,0 +1,147 @@
+
+
+.homescreenbackground {
+    background-image: url('https://images.unsplash.com/photo-1523287562758-66c7fc58967f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyZWVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+   
+}
+  
+  .rotatingTextAdjective {
+    font-family: "font-family: 'Playfair Display', serif";
+    color: rgb(0, 43, 134);
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 700;
+    left: 0;
+    margin-bottom: 0;
+    margin-top: 150px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    margin-left: 45px;
+    margin-top: 185px;
+  }
+  
+  .rotatingTextAdjective:nth-of-type(1) {
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+
+  }
+  
+  .rotatingTextAdjective:nth-of-type(2) {
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-delay: 1.75s;
+
+  }
+  
+  .rotatingTextAdjective:nth-of-type(3) {
+    animation-name: rotate-last;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+  }
+  
+  @keyframes rotate {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 50px, 0);
+
+    }
+    
+    20%, 80% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+
+    }
+    
+    100% {
+      opacity: 0;
+      transform: translate3d(0, -25px, 0);
+
+    }
+  }
+  
+  @keyframes rotate-last {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 50px, 0);
+
+    }
+    
+    50%, 100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+
+    }
+  }
+
+  .phrase2 {
+    margin-left: 375px;
+    margin-top: 315px;
+    font-family: 'font-family: 'Playfair Display', serif';
+    font-weight: bold;
+    font-size: 125px;
+    color: rgb(0, 43, 134);
+
+  } 
+
+  .learnMore {
+    border-radius: 2rem;
+    background-color:rgb(0, 43, 134);
+    border:rgb(136, 137, 224);
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    font-size: 25px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    margin-left: 575px;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+
+  }
+
+  .learnMore:hover{
+      font-size: 30px;
+      background-color: rgb(64, 2, 209);
+      padding-right: 24px;
+      padding-left:8px;
+      text-decoration: none;
+      color: white;
+  }
+  .learnMore:hover:after{
+    opacity: 1;
+    right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+  .learnMore:after{
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 20px;
+    right: -10px;
+    transition: 0.1s;
+    height: 10px;
+    width: 10px;
+    text-decoration: none;
+    color: white;
+  }
