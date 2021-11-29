@@ -8,7 +8,7 @@ import terms from './components/terms/terms';
 import contactUs from './components/contactUs/contactUs';
 import Footer from './components/footer/footer';
 import Navbar from './components/navbar/navbar';
-import Register from './components/Register/Register';
+import signup from './components/signup/signup';
 import login from './components/login/login';
 import { Provider } from "react-redux";
 import store from "./store";
@@ -37,13 +37,6 @@ if (localStorage.jwtToken) {
   }
 }
 
-
-
-
-
-
-
-
 function App() {
   return (
     <Provider store={store}>
@@ -58,7 +51,7 @@ function App() {
               <Route path='/contactUs' component={contactUs}/>
               <Route path='/terms' component={terms}/>
               <Route path='/privacyPolicy' component={privacyPolicy}/>
-              <Route path='/Register' component={Register}/>
+              <Route path='/signup' component={signup}/>
             </Switch>
           </Router>
       </Provider>

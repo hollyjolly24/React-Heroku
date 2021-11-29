@@ -6,6 +6,7 @@ import classnames from "classnames";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
 import loginStyles from "./login.module.css";
+import { Link } from "react-router-dom";
 
 class Login extends Component {
   constructor() {
@@ -104,6 +105,9 @@ return (
       </button>
       
   </form>
+  <p>
+    Don't have an account? <Link to="/signup" className={loginStyles.signupBtn}>Signup</Link>
+  </p>
   </div>
   <Footer/>
   </div> 
