@@ -18,16 +18,16 @@ function Navbar() {
         <nav class = 'nav' className={navbarstyles.nav}>
           <div className={navbarstyles.topNav}>
             <div className={navbarstyles.logo}>
-                <Link to='/MainSection' className={navbarstyles.career} onclick={() => history.push("/MainSection")}>
+                <Link to='/publicHome' className={navbarstyles.career} onclick={() => history.push("/publicHome")}>
                   Career
                 </Link>
-                <Link to='/MainSection' className={navbarstyles.lift} onclick={() => history.push("/MainSection")}>
+                <Link to='/publicHome' className={navbarstyles.lift} onclick={() => history.push("/publicHome")}>
                   Lift
                 </Link>
             </div>
 
         <div className={navbarstyles.links}>
-          <Link to='/MainSection' className={navbarstyles.mainSection} onclick={() => history.push("/MainSection")}>
+          <Link to='/publicHome' className={navbarstyles.mainSection} onclick={() => history.push("/publicHome")}>
             Home
           </Link>   
 

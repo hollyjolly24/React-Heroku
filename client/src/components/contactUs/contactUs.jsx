@@ -2,7 +2,7 @@ import React, { useRef} from "react";
 import contactUsStyles from './contact.module.css';
 import emailjs from "emailjs-com"
 import Footer from "../footer/footer";
-import Navbar from "../navbar/Navbar";
+import Navbar from "../navbar/navbar";
 
 export default function Contact() {
     const form = useRef();
