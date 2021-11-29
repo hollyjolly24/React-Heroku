@@ -8,7 +8,7 @@ import terms from './components/terms/terms';
 import contactUs from './components/contactUs/contactUs';
 import Footer from './components/footer/footer';
 import Navbar from './components/navbar/navbar';
-import signup from './components/signup/signup';
+import Register from './components/Register/Register';
 import login from './components/login/login';
 import { Provider } from "react-redux";
 import store from "./store";
@@ -58,7 +58,7 @@ function App() {
               <Route path='/contactUs' component={contactUs}/>
               <Route path='/terms' component={terms}/>
               <Route path='/privacyPolicy' component={privacyPolicy}/>
-              <Route path='/signup' component={signup}/>
+              <Route path='/Register' component={Register}/>
             </Switch>
           </Router>
       </Provider>

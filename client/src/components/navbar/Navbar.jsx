@@ -39,7 +39,7 @@ function Navbar() {
             Log In
           </Link> 
 
-           <Link to='/signup' className={navbarstyles.signup} onclick={() => history.push("/signup")}>
+           <Link to='/Register' className={navbarstyles.signup} onclick={() => history.push("/Register")}>
             Sign Up
           </Link> 
         </div>
