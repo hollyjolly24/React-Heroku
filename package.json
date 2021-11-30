@@ -1,5 +1,6 @@
 {
   "name": "csci331_1127",
+  "homepage": "https://redo-csci331-application.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
