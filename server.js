@@ -1,4 +1,3 @@
-const createStore = require("redux");
 const applyMiddleware = require("redux");
 const express = require("express");
 const mongoose = require("mongoose");
@@ -30,9 +29,8 @@ require("./config/passport")(passport);
 app.use("/api/users", users);
 //Static assets need served if in Heroku production.
 if(process.env.NODE_ENV === "production"){
-  store = createStore(rootReducer, initialState, compose(
-    applyMiddleware(...middleware)
-));
+    applyMiddleware(...middleware);
+
   //If the node environment is in production then set static 
   app.use(express.static('client/build'));
   //^^express serves that static files that are found in 'client/build'
