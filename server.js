@@ -1,9 +1,10 @@
+const createStore = require("redux");
+const applyMiddleware = require("redux");
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 const path = require('path');
-import { createStore, applyMiddleware } from 'redux'
 const users = require("./routes/api/users");
 const app = express();
 // Bodyparser middleware
