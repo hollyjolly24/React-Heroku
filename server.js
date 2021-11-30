@@ -16,10 +16,7 @@ app.use(bodyParser.json());
 // DB Config
 const db = require("./config/keys").mongoURI;
 // Connect to MongoDB
-mongoose
-  .connect(
-    db,
-    { useNewUrlParser: true }
+mongoose.connect(process.env.MONGODB_URI ||db, { useNewUrlParser: true }
   )
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
@@ -34,12 +31,12 @@ app.use("/api/users", users);
 //Static assets need served if in Heroku production.
 if(process.env.NODE_ENV === "production"){
   //If the node environment is in production then set static 
-  app.use(express.static('client/src'));
+  app.use(express.static('client/build'));
   //^^express serves that static files that are found in 'client/build'
   const path = require('path');
   app.get('*'), (req,res) => {
     // get * = get anything and then load index.html
-    res.sendFile(path.resolve(__dirname, 'client','src','index.js'));
+    res.sendFile(path.resolve(__dirname, 'client','build','index.html'));
   }
 
 }
