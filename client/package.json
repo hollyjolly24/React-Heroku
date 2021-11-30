@@ -2,10 +2,8 @@
   "name": "client",
   "version": "0.1.0",
   "homepage": "https://careerlift331.herokuapp.com/publicHome",
-  
   "engines": {
-    "npm": ">=6.0.0",
-    "node": ">=10.0.0"
+    "node": "16.13.0"
   },
   "private": true,
     "dependencies": {

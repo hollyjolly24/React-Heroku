@@ -2,8 +2,7 @@
   "name": "csci331_1127",
   "version": "0.1.0",
   "engines": {
-    "npm": ">=6.0.0",
-    "node": ">=10.0.0"
+    "node": "16.13.0"
   },
   "private": true,
   "dependencies": {
