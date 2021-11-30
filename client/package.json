@@ -2,6 +2,11 @@
   "name": "client",
   "version": "0.1.0",
   "homepage": "https://careerlift331.herokuapp.com/publicHome",
+  
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=10.0.0"
+  },
   "private": true,
     "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
@@ -43,9 +48,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "engines": {
-    "npm": ">=6.0.0",
-    "node": ">=10.0.0"
   }
-}
+  }

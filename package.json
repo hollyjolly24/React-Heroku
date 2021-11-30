@@ -1,6 +1,10 @@
 {
   "name": "csci331_1127",
   "version": "0.1.0",
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=10.0.0"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
@@ -41,10 +45,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  },
-  "engines": {
-    "npm": ">=6.0.0",
-    "node": ">=10.0.0"
   }
   
 }
