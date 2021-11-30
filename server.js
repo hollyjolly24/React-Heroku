@@ -42,5 +42,6 @@ if(process.env.NODE_ENV === "production"){
 }
 
 
-const port = process.env.PORT || 5000; // process.env.port is Heroku's port 
-app.listen(port, () => console.log(`Server up &&& running on port ${port} !`));
+const PORT = process.env.PORT || '5000'; // process.env.port is Heroku's port 
+app = express();
+app.set("port",PORT);
