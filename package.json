@@ -24,22 +24,19 @@
     "path": "^0.12.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-redux": "^7.2.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "validator": "^13.7.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "cd client && npm run build",
-    "install-client": "cd client && npm install",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client npm install && npm run build "
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
