@@ -11,7 +11,7 @@ import history from '../history/history';
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </link>
-function Navbar() {
+function navbar() {
 
     return (
       <>
@@ -49,4 +49,4 @@ function Navbar() {
     );
   }
   
-  export default Navbar;
+  export default navbar;

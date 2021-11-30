@@ -6,6 +6,7 @@ import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
 import signupStyles from "./signup.module.css";
 import Footer from "../footer/footer";
+import Navbar from "../navbar/navbar";
 
 class signup extends Component {
   constructor() {
@@ -53,6 +54,7 @@ render() {
 return (
 
   <div className={signupStyles.bGround}>
+    <Navbar/>
     <div className={signupStyles.contactForm}>
 
 <h1 className={signupStyles.contactHeader}>

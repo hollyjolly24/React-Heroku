@@ -6,6 +6,7 @@ import classnames from "classnames";
 import Footer from "../footer/footer";
 import loginStyles from "./login.module.css";
 import { Link } from "react-router-dom";
+import Navbar from "../navbar/navbar";
 
 class Login extends Component {
   constructor() {
@@ -50,6 +51,7 @@ render() {
     const { errors } = this.state;
 return (
   <div className={loginStyles.bGround}>
+    <Navbar/>
     <div className={loginStyles.contactForm}>
 
 <h1 className={loginStyles.contactHeader}>

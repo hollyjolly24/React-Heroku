@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './aboutUs.module.css';
 import Footer from '../footer/footer';
+import Navbar from '../navbar/navbar';
 
 function aboutUs () {
 
     return (
         <>
+        <Navbar/>
         <div>
             <header className={styles.learnHeader}>WHY wait until graduation to start your career?</header>
             <h1 className={styles.aboutUsList}> Explore Opportunities</h1>

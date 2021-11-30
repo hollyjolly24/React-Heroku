@@ -16,6 +16,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
+import Navbar from "./components/navbar/navbar";
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -50,6 +51,7 @@ function App() {
               <Route path='/terms' component={terms}/>
               <Route path='/privacyPolicy' component={privacyPolicy}/>
               <Route path='/signup' component={signup}/>
+              <Route path='/navbar' component={Navbar}/>
             </Switch>
           </Router>
       </Provider>
