@@ -44,11 +44,6 @@ if(process.env.NODE_ENV === "production"){
   });
 
 }
-else {
-  store = createStore(rootReducer, initialState, compose(
-      applyMiddleware(...middleware),
-      window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  ));
-}
+
 const port = process.env.PORT || 5000; // process.env.port is Heroku's port 
 app.listen(port, () => console.log(`Server up &&& running on port ${port} !`));
