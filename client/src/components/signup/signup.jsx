@@ -126,19 +126,10 @@ return (
   </div>
   <Footer/>
   </div> 
-
-
-
-
-
-
-
-
-
-
     );
   }
 }
+
 signup.propTypes = {
   registerUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,

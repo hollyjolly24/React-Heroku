@@ -1,7 +1,7 @@
 
 
 .homescreenbackground {
-    background-image: url('https://images.unsplash.com/photo-1523287562758-66c7fc58967f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyZWVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
+    background-image: url('https://images.unsplash.com/photo-1536618672413-5a398358dc7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODJ8fG1vbnRhbmElMjBzdGF0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,7 +13,7 @@
   
   .rotatingTextAdjective {
     font-family: "font-family: 'Playfair Display', serif";
-    color: rgb(0, 43, 134);
+    color: rgb(255, 255, 255);
     font-size: 150px;
     font-style: normal;
     font-weight: 700;
