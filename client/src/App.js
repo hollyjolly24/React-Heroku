@@ -7,8 +7,8 @@ import privacyPolicy from './components/privacyPolicy/privacyPolicy';
 import terms from './components/terms/terms';
 import contactUs from './components/contactUs/contactUs';
 import Footer from './components/footer/footer';
-import signup from './components/signup/signup';
-import login from './components/login/login';
+import Register from './components/register/Register';
+import Login from './components/login/Login';
 import { Provider } from "react-redux";
 import store from "./store";
 import PrivateRoute from "./components/private-route/PrivateRoute";
@@ -17,6 +17,7 @@ import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import Navbar from "./components/navbar/Navbar";
+
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -43,14 +44,14 @@ function App() {
       <Router>
             <Switch>
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
-              <Route path='/login' component={login}/>
+              <Route path='/Login' component={Login}/>
               <Route path='/Footer' component={Footer}/>
-              <Route path='/publicHome' component={publicHome}/>
+              <Route path='/' exact component={publicHome}/>
               <Route path='/aboutUs' component={aboutUs}/>
               <Route path='/contactUs' component={contactUs}/>
               <Route path='/terms' component={terms}/>
               <Route path='/privacyPolicy' component={privacyPolicy}/>
-              <Route path='/signup' component={signup}/>
+              <Route path='/Register' component={Register}/>
               <Route path='/navbar' component={Navbar}/>
             </Switch>
           </Router>

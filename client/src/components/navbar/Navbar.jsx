@@ -32,11 +32,11 @@ function Navbar() {
             About Us
           </Link>   
 
-          <Link to='/login' className={navbarstyles.login} onclick={() => history.push("/login")}>
+          <Link to='/Login' className={navbarstyles.login} onclick={() => history.push("/Login")}>
             Log In
           </Link> 
 
-           <Link to='/signup' className={navbarstyles.signup} onclick={() => history.push("/signup")}>
+           <Link to='/Register' className={navbarstyles.signup} onclick={() => history.push("/Register")}>
             Sign Up
           </Link> 
         </div>
