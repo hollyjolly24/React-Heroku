@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://careerlift331.herokuapp.com/publicHome",
+  "homepage": "https://careerlift331.herokuapp.com/",
   "engines": {
     "node": "16.13.0"
   },
