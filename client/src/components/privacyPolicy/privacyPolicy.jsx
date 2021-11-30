@@ -1,13 +1,11 @@
 import React from "react";
 import privacyPolicyStyles from './privacyPolicy.module.css';
 import Footer from "../footer/footer";
-import Navbar from "../navbar/navbar";
 
 
 function privacyPolicy() {
     return(
         <>
-        <Navbar/>
         <h1 className={privacyPolicyStyles.Pheader}>
             Privacy Policy
         </h1>

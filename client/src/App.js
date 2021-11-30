@@ -7,7 +7,6 @@ import privacyPolicy from './components/privacyPolicy/privacyPolicy';
 import terms from './components/terms/terms';
 import contactUs from './components/contactUs/contactUs';
 import Footer from './components/footer/footer';
-import Navbar from './components/navbar/navbar';
 import signup from './components/signup/signup';
 import login from './components/login/login';
 import { Provider } from "react-redux";
@@ -44,7 +43,6 @@ function App() {
             <Switch>
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <Route path='/login' component={login}/>
-              <Route path='/navbar' component={Navbar}/>
               <Route path='/Footer' component={Footer}/>
               <Route path='/publicHome' component={publicHome}/>
               <Route path='/aboutUs' component={aboutUs}/>

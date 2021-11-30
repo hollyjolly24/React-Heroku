@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
-import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
 import loginStyles from "./login.module.css";
 import { Link } from "react-router-dom";
@@ -51,7 +50,6 @@ render() {
     const { errors } = this.state;
 return (
   <div className={loginStyles.bGround}>
-    <Navbar/>
     <div className={loginStyles.contactForm}>
 
 <h1 className={loginStyles.contactHeader}>
