@@ -43,6 +43,6 @@ if(process.env.NODE_ENV === "production"){
   }
 
 }
-
-const port = process.env.MONGODB_URI || 5000; // process.env.port is Heroku's port 
+const uri = process.env.MONGODB_URI;
+const port = process.env.PORT || 5000; // process.env.port is Heroku's port 
 app.listen(port, () => console.log(`Server up &&& running on port ${port} !`));
