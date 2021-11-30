@@ -6,7 +6,7 @@ import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
 import signupStyles from "./signup.module.css";
 import Footer from "../footer/footer";
-import Navbar from "../navbar/navbar";
+import Navbar from "../navbar/Navbar";
 
 class signup extends Component {
   constructor() {

@@ -16,7 +16,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
-import Navbar from "./components/navbar/navbar";
+import Navbar from "./components/navbar/Navbar";
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {

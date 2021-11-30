@@ -6,7 +6,7 @@ import classnames from "classnames";
 import Footer from "../footer/footer";
 import loginStyles from "./login.module.css";
 import { Link } from "react-router-dom";
-import Navbar from "../navbar/navbar";
+import Navbar from "../navbar/Navbar";
 
 class Login extends Component {
   constructor() {

@@ -3,7 +3,7 @@ import history from '../history/history';
 import { Link } from 'react-router-dom';
 import mainSectionStyles from './publicHome.module.css';
 import Footer from '../footer/footer';
-import Navbar from '../navbar/navbar';
+import Navbar from '../navbar/Navbar';
 
 function MainSection() {
     return (

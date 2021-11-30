@@ -6,7 +6,7 @@
   .logo{
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 50px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -31,18 +31,18 @@
   
   
   .career {
-    color: blue;
+    color: rgb(220, 220, 236);
     text-decoration: none;
   }
   
   .lift{
-    color: blue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
   
   }
   
   .mainSection, .aboutUs, .login, .signup {
-    color: blue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: right;
     padding: 10px;

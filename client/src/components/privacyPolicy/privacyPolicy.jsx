@@ -1,7 +1,7 @@
 import React from "react";
 import privacyPolicyStyles from './privacyPolicy.module.css';
 import Footer from "../footer/footer";
-import Navbar from "../navbar/navbar";
+import Navbar from "../navbar/Navbar";
 
 function privacyPolicy() {
     return(

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './aboutUs.module.css';
 import Footer from '../footer/footer';
-import Navbar from '../navbar/navbar';
+import Navbar from '../navbar/Navbar';
 
 function aboutUs () {
 
