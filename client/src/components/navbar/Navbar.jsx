@@ -32,7 +32,7 @@ function Navbar() {
             About Us
           </Link>   
 
-          <Link to='/Login' className={navbarstyles.login} onclick={() => history.push("/Login")}>
+          <Link to='/login' className={navbarstyles.login} onclick={() => history.push("/login")}>
             Log In
           </Link> 
 

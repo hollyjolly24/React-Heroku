@@ -8,7 +8,7 @@ import terms from './components/terms/terms';
 import contactUs from './components/contactUs/contactUs';
 import Footer from './components/footer/footer';
 import Register from './components/register/Register.jsx';
-import Login from './components/login/Login.jsx';
+import Login from './components/login/login';
 import { Provider } from "react-redux";
 import store from "./store";
 import PrivateRoute from "./components/private-route/PrivateRoute";
@@ -34,7 +34,7 @@ if (localStorage.jwtToken) {
     // Logout user
     store.dispatch(logoutUser());
     // Redirect to login
-    window.location.href = "./Login";
+    window.location.href = "./login";
   }
 }
 
@@ -44,7 +44,7 @@ function App() {
       <Router>
             <Switch>
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
-              <Route path='/Login' component={Login}/>
+              <Route path='/login' component={Login}/>
               <Route path='/Footer' component={Footer}/>
               <Route path='/' exact component={publicHome}/>
               <Route path='/aboutUs' component={aboutUs}/>
