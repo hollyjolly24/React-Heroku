@@ -34,12 +34,12 @@ app.use("/api/users", users);
 //Static assets need served if in Heroku production.
 if(process.env.NODE_ENV === "production"){
   //If the node environment is in production then set static 
-  app.use(express.static('client/build'));
+  app.use(express.static('client/src'));
   //^^express serves that static files that are found in 'client/build'
   const path = require('path');
   app.get('*'), (req,res) => {
     // get * = get anything and then load index.html
-    res.sendFile(path.resolve(__dirname, 'client','src','components','publicHome','publicHome.jsx'));
+    res.sendFile(path.resolve(__dirname, 'client','build','index.html'));
   }
 
 }
