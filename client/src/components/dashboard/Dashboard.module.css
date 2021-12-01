@@ -1,0 +1,10 @@
+.background{
+    background-image: url('https://images.unsplash.com/photo-1536618672413-5a398358dc7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODJ8fG1vbnRhbmElMjBzdGF0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+   
+}

@@ -11,12 +11,12 @@ import Register from './components/register/Register.jsx';
 import Login from './components/login/login';
 import { Provider } from "react-redux";
 import store from "./store";
-import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import Navbar from "./components/navbar/Navbar";
+import ProfileNavbar from './components/profileNavbar/profileNavbar';
 
 
 // Check for token to keep user logged in
@@ -43,7 +43,8 @@ function App() {
     <Provider store={store}>
       <Router>
             <Switch>
-            <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <Route path="/dashboard" component={Dashboard} />
+              <Route path="/profileNavbar" component={ProfileNavbar} />
               <Route path='/login' component={Login}/>
               <Route path='/Footer' component={Footer}/>
               <Route path='/' exact component={publicHome}/>
