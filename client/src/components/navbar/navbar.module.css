@@ -1,6 +1,8 @@
 
 .nav {
     height: 70px;
+    background-color: #2e2B59 ;
+
   }
   
   .logo{
@@ -11,7 +13,7 @@
     text-decoration: none;
     font-size: 2rem;
     display: flex;
-    align-items: center;
+    align-items: right;
     font-family: righteous, cursive;
   }
   
@@ -25,8 +27,8 @@
   }
   
     .links {
-    justify-content: center;
-    text-align: center;
+    text-align: right;
+    padding-right: 20px;
   }
   
   
@@ -44,16 +46,31 @@
   .mainSection, .aboutUs, .login, .signup {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    text-align: center;
+    text-align: right;
     padding: 10px;
     margin-right: 10px;
     font-size: 20px;
-    margin-top: 0;
   
   }
   
-  .mainSection:hover, .aboutUs:hover, .login:hover, .signup:hover {
-    color: purple;
+  .mainSection:hover {
+    color: #ACB0A3;
+    font-size: 25px;
+  
+  }
+  .aboutUs:hover{
+    color: #ACB0A3;
+    font-size: 25px;
+  
+  }
+   .login:hover{
+    color: #ACB0A3;
+    font-size: 25px;
+  
+  }
+   .signup:hover{
+    color: #ACB0A3;
+    font-size: 25px;
   
   }
   

@@ -7,28 +7,35 @@ import Navbar from '../navbar/Navbar';
 
 function MainSection() {
     return (
-  
+      <>
       <div className={mainSectionStyles.homescreenbackground}>
         <Navbar/>
-        <div>
+        <img 
+          src="https://cdn.pixabay.com/photo/2018/12/10/10/21/earth-3866609_1280.jpg" 
+          alt="imageHomePage"
+          />
             <div className={mainSectionStyles.rotatingText}>
               <div className={mainSectionStyles.rotatingTextContent}>
                 <h2 className={mainSectionStyles.rotatingTextAdjective}>Explore</h2>
                 <h2 className={mainSectionStyles.rotatingTextAdjective}>Mentor</h2>
-                <h2 className={mainSectionStyles.rotatingTextAdjective}>Connect</h2>
+                <h2 className={mainSectionStyles.rotatingTextAdjective}>Connect.</h2>
               </div>
             </div>
+             <div className={mainSectionStyles.phrase1}>
+                University
+             </div>   
              <div className={mainSectionStyles.phrase2}>
-                University Life
+                Life
              </div>   
         
                 <Link to='/aboutUs' className={mainSectionStyles.learnMore} onclick={() => history.push("/learnMore")}>
                         Learn More
                 </Link>
-
+               
+            <Footer/>
         </div>
-        <Footer/>
-        </div>
+        
+        </>
        
 
     

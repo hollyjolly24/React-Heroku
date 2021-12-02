@@ -1,7 +1,7 @@
 
 .nav {
     height: 70px;
-    background-color: rgb(0,0,0);
+    background-color: #2e2B59 ;
   }
   
   .logo{
@@ -52,10 +52,29 @@
   
   }
   
-  .profile:hover, .message:hover, .logout:hover, .signup:hover {
-    color: purple;
+
+  .profile:hover {
+    color: #ACB0A3;
+    font-size: 25px;
   
   }
+  .message:hover{
+    color: #ACB0A3;
+    font-size: 25px;
+  
+  }
+   .logout:hover{
+    color: #ACB0A3;
+    font-size: 25px;
+  
+  }
+ 
+  .forum:hover{
+    color: #ACB0A3;
+    font-size: 25px;
+  
+  }
+  
   
   
   
