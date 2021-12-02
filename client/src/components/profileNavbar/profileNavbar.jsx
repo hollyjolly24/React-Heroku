@@ -9,7 +9,8 @@ import history from '../history/history';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
-
+import { faComments, faUser,faSignOutAlt,faUsers} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class ProfileNavbar extends Component {
   
@@ -22,6 +23,7 @@ class ProfileNavbar extends Component {
   render() {
       return (
         <>
+        
           <nav class = 'nav' className={navbarstyles.nav}>
             <div className={navbarstyles.topNav}>
               <div className={navbarstyles.logo}>
@@ -35,17 +37,23 @@ class ProfileNavbar extends Component {
 
           <div className={navbarstyles.links}>
           <Link to='/profile' className={navbarstyles.aboutUs} onclick={() => history.push("/profile")}>
+          <FontAwesomeIcon icon={faUser} />             
               Profile
             </Link>  
           <Link to='/messages' className={navbarstyles.aboutUs} onclick={() => history.push("/messages")}>
-              Messages
+          <FontAwesomeIcon icon={faComments} />             
+             Messages
             </Link>  
             <Link to='/forums' className={navbarstyles.aboutUs} onclick={() => history.push("/forums")}>
+            <FontAwesomeIcon icon={faUsers} />             
+
               Forums
             </Link>   
             <Link to="/" className={navbarstyles.logout} onClick={this.onLogoutClick}>
+            <FontAwesomeIcon icon={faSignOutAlt} />             
               Logout
             </Link>
+
           </div>
             </div>
           </nav>

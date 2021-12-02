@@ -6,6 +6,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import navbarstyles from './navbar.module.css'
 import history from '../history/history';
+import { faHome,faUserPlus, faSignInAlt, faInfoCircle} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 function Navbar() {
@@ -25,18 +27,22 @@ function Navbar() {
 
         <div className={navbarstyles.links}>
           <Link to='/publicHome' className={navbarstyles.mainSection} onclick={() => history.push("/publicHome")}>
+          <FontAwesomeIcon icon={faHome} />             
             Home
           </Link>   
 
           <Link to='/aboutUs' className={navbarstyles.aboutUs} onclick={() => history.push("/aboutUs")}>
+          <FontAwesomeIcon icon={faInfoCircle} />             
             About Us
           </Link>   
 
           <Link to='/login' className={navbarstyles.login} onclick={() => history.push("/login")}>
-            Log In
+          <FontAwesomeIcon icon={faSignInAlt} />             
+            Login
           </Link> 
 
            <Link to='/Register' className={navbarstyles.signup} onclick={() => history.push("/Register")}>
+           <FontAwesomeIcon icon={faUserPlus} />              
             Sign Up
           </Link> 
         </div>
