@@ -7,12 +7,11 @@
   },
   "private": true,
   "dependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bcryptjs": "^2.4.3",
+    "bluebird": "^3.7.2",
     "body-parser": "^1.19.0",
     "bootstrap-icons": "^1.7.1",
     "concurrently": "^6.4.0",
@@ -33,6 +32,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "redux": "^4.1.2",
+    "socket.io": "^4.4.0",
     "validator": "^13.7.0",
     "web-vitals": "^1.1.2"
   },

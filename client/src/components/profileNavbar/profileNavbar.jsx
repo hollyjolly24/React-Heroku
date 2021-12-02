@@ -36,17 +36,16 @@ class ProfileNavbar extends Component {
               </div>
 
           <div className={navbarstyles.links}>
-          <Link to='/profile' className={navbarstyles.aboutUs} onclick={() => history.push("/profile")}>
+          <Link to='/profile' className={navbarstyles.profile} onclick={() => history.push("/profile")}>
           <FontAwesomeIcon icon={faUser} />             
               Profile
             </Link>  
-          <Link to='/messages' className={navbarstyles.aboutUs} onclick={() => history.push("/messages")}>
+          <Link to='/messages' className={navbarstyles.message} onclick={() => history.push("/messages")}>
           <FontAwesomeIcon icon={faComments} />             
              Messages
             </Link>  
-            <Link to='/forums' className={navbarstyles.aboutUs} onclick={() => history.push("/forums")}>
+            <Link to='/forums' className={navbarstyles.forum} onclick={() => history.push("/forums")}>
             <FontAwesomeIcon icon={faUsers} />             
-
               Forums
             </Link>   
             <Link to="/" className={navbarstyles.logout} onClick={this.onLogoutClick}>

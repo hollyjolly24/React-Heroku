@@ -27,7 +27,7 @@
   
     .links {
     justify-content: right;
-    text-align: right;
+    text-align: center;
   }
   
   
@@ -42,17 +42,17 @@
   
   }
   
-  .mainSection, .aboutUs, .logout, .signup {
+  .profile, .message, .logout, .forum {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    text-align: right;
+    text-align: center;
     padding: 10px;
     margin-right: 10px;
     font-size: 20px;
   
   }
   
-  .mainSection:hover, .aboutUs:hover, .login:hover, .signup:hover {
+  .profile:hover, .message:hover, .logout:hover, .signup:hover {
     color: purple;
   
   }

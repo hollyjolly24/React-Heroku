@@ -25,8 +25,8 @@
   }
   
     .links {
-    justify-content: right;
-    text-align: right;
+    justify-content: center;
+    text-align: center;
   }
   
   
@@ -44,10 +44,11 @@
   .mainSection, .aboutUs, .login, .signup {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    text-align: right;
+    text-align: center;
     padding: 10px;
     margin-right: 10px;
     font-size: 20px;
+    margin-top: 0;
   
   }
   

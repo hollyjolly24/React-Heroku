@@ -1,7 +1,7 @@
 
 
 .homescreenbackground {
-    background-image: url('https://images.unsplash.com/photo-1536618672413-5a398358dc7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODJ8fG1vbnRhbmElMjBzdGF0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60');
+    background-image: url('https://images.unsplash.com/photo-1521583871906-b3177c649805?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGxpZ2h0YnVsYnxlbnwwfDB8MHx8&auto=format&fit=crop&w=800&q=60');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,7 +14,7 @@
   .rotatingTextAdjective {
     font-family: "font-family: 'Playfair Display', serif";
     color: rgb(255, 255, 255);
-    font-size: 150px;
+    font-size: 125px;
     font-style: normal;
     font-weight: 700;
     left: 0;
@@ -26,7 +26,7 @@
     text-align: center;
     text-transform: uppercase;
     top: 0;
-    margin-left: 45px;
+    margin-left: 525px;
     margin-top: 185px;
   }
   
@@ -87,29 +87,30 @@
   }
 
   .phrase2 {
-    margin-left: 375px;
     margin-top: 315px;
     font-family: 'font-family: 'Playfair Display', serif';
     font-weight: bold;
-    font-size: 125px;
-    color: rgb(0, 43, 134);
+    font-size: 95px;
+    color: rgb(255, 255, 255);
+    margin-left: 685px;
+
 
   } 
 
   .learnMore {
     border-radius: 2rem;
-    background-color:rgb(0, 43, 134);
+    background-color:rgb(255, 255, 255);
     border:rgb(136, 137, 224);
     padding: 20px;
     width: 200px;
     transition: all 0.5s;
     font-size: 25px;
-    color: white;
+    color: rgb(110, 136, 252);
     font-family: 'Poppins', sans-serif;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-    margin-left: 575px;
+    margin-left: 800px;
     margin-top: 100px;
     margin-bottom: 75px;
     justify-content: center;
