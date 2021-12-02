@@ -18,7 +18,7 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 import Navbar from "./components/navbar/Navbar";
 import ProfileNavbar from './components/profileNavbar/profileNavbar';
 import Profile from './components/profile/profile';
-import Messages from './components/messages/messages';
+import ChatApp from './components/messages/chatHelp';
 import Forums from './components/forums/forums';
 
 // Check for token to keep user logged in
@@ -40,6 +40,7 @@ if (localStorage.jwtToken) {
   }
 }
 
+
 function App() {
   return (
     <Provider store={store}>
@@ -47,7 +48,7 @@ function App() {
             <Switch>
               <Route path="/profile" component={Profile} />
               <Route path="/forums" component={Forums}/>
-              <Route path="/messages" component={Messages}/>
+              <Route path="/chatHelp" component={ChatApp}/>
               <Route path="/dashboard" component={Dashboard} />
               <Route path="/profileNavbar" component={ProfileNavbar} />
               <Route path='/login' component={Login}/>

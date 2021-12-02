@@ -40,7 +40,7 @@ class ProfileNavbar extends Component {
           <FontAwesomeIcon icon={faUser} />             
               Profile
             </Link>  
-          <Link to='/messages' className={navbarstyles.message} onclick={() => history.push("/messages")}>
+          <Link to='/chatHelp' className={navbarstyles.message} onclick={() => history.push("/chatHelp")}>
           <FontAwesomeIcon icon={faComments} />             
              Messages
             </Link>  
