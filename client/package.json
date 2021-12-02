@@ -5,7 +5,7 @@
     "node": "16.13.0"
   },
   "private": true,
-    "dependencies": {
+  "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -46,4 +46,4 @@
       "last 1 safari version"
     ]
   }
-  }
+}

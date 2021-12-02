@@ -42,7 +42,7 @@
   
   }
   
-  .mainSection, .aboutUs, .login, .signup {
+  .mainSection, .aboutUs, .logout, .signup {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: right;

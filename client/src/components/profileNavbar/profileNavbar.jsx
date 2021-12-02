@@ -10,43 +10,42 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 
+
 class ProfileNavbar extends Component {
+  
   onLogoutClick = e => {
     e.preventDefault();
     this.props.logoutUser();
+    history.push("/");
+
   };
   render() {
-    const { user } = this.props.auth;
-
       return (
         <>
           <nav class = 'nav' className={navbarstyles.nav}>
             <div className={navbarstyles.topNav}>
               <div className={navbarstyles.logo}>
-                  <Link to='/publicHome' className={navbarstyles.career} onclick={() => history.push("/publicHome")}>
+                  <Link to='/Dashboard' className={navbarstyles.career} onclick={() => history.push("/Dashboard")}>
                     Career
                   </Link>
-                  <Link to='/publicHome' className={navbarstyles.lift} onclick={() => history.push("/publicHome")}>
+                  <Link to='/Dashboard' className={navbarstyles.lift} onclick={() => history.push("/Dashboard")}>
                     Lift
                   </Link>
               </div>
 
           <div className={navbarstyles.links}>
-            <Link to='/publicHome' className={navbarstyles.mainSection} onclick={() => history.push("/publicHome")}>
-              Home
+          <Link to='/profile' className={navbarstyles.aboutUs} onclick={() => history.push("/profile")}>
+              Profile
+            </Link>  
+          <Link to='/messages' className={navbarstyles.aboutUs} onclick={() => history.push("/messages")}>
+              Messages
+            </Link>  
+            <Link to='/forums' className={navbarstyles.aboutUs} onclick={() => history.push("/forums")}>
+              Forums
             </Link>   
-
-            <Link to='/aboutUs' className={navbarstyles.aboutUs} onclick={() => history.push("/aboutUs")}>
-              About Us
-            </Link>   
-            <button
-              style={{
-              }}
-              onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-            >
+            <Link to="/" className={navbarstyles.logout} onClick={this.onLogoutClick}>
               Logout
-            </button>
+            </Link>
           </div>
             </div>
           </nav>
@@ -59,11 +58,9 @@ class ProfileNavbar extends Component {
     logoutUser: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired
   };
-  
   const mapStateToProps = state => ({
     auth: state.auth
   });
-  
   export default connect(
     mapStateToProps,
     { logoutUser }
