@@ -39,14 +39,14 @@ class ProfileNavbar extends Component {
             <Link to='/aboutUs' className={navbarstyles.aboutUs} onclick={() => history.push("/aboutUs")}>
               About Us
             </Link>   
-
-            <Link to='/login' className={navbarstyles.login} onclick={() => history.push("/login")}>
-              Log In
-            </Link> 
-
-            <Link to='/' className={navbarstyles.signup} onclick={this.onLogoutClick}>
+            <button
+              style={{
+              }}
+              onClick={this.onLogoutClick}
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+            >
               Logout
-            </Link> 
+            </button>
           </div>
             </div>
           </nav>
