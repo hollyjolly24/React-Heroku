@@ -7,7 +7,12 @@ const users = require("./routes/api/users");
 const app = express();
 const multer = require("multer");
 const router = express.Router();
-const forumRoute = require("./routes/api/forums");
+const profileRouter = require('./routes/api/profiles');
+
+
+
+
+
 
 
 //forums post
@@ -81,7 +86,6 @@ app.use(passport.initialize());
 require("./config/passport")(passport);
 // Routes
 app.use("/api/users", users);
-app.use("/api/forums", forumRoute);
 
 //Static assets need served if in Heroku production.
 if(process.env.NODE_ENV === "production"){
@@ -97,6 +101,9 @@ if(process.env.NODE_ENV === "production"){
 
 }
 
+app.use('/profiles', profileRouter);
+
 const port = process.env.PORT || 5000; // process.env.port is Heroku's port 
 
 app.listen(port, () => console.log(`Server up &&& running on port ${port} !`));
+

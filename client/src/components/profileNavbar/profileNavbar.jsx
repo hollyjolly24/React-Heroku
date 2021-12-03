@@ -9,7 +9,7 @@ import history from '../history/history';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
-import { faComments, faUser,faSignOutAlt,faUsers} from '@fortawesome/free-solid-svg-icons';
+import {faUser,faSignOutAlt,faUsers, faBriefcase} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class ProfileNavbar extends Component {
@@ -40,14 +40,17 @@ class ProfileNavbar extends Component {
           <FontAwesomeIcon icon={faUser} />             
               Profile
             </Link>  
-          <Link to='/Chat' className={navbarstyles.message} onclick={() => history.push("/Chat")}>
-          <FontAwesomeIcon icon={faComments} />             
-             Messages
-            </Link>  
+
             <Link to='/forums' className={navbarstyles.forum} onclick={() => history.push("/forums")}>
             <FontAwesomeIcon icon={faUsers} />             
               Forums
             </Link>   
+
+            <Link to='/jobs' className={navbarstyles.forum} onclick={() => history.push("/jobs")}>
+            <FontAwesomeIcon icon={faBriefcase} />             
+              Jobs
+            </Link>   
+
             <Link to="/" className={navbarstyles.logout} onClick={this.onLogoutClick}>
             <FontAwesomeIcon icon={faSignOutAlt} />             
               Logout

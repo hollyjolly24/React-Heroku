@@ -18,9 +18,8 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 import Navbar from "./components/navbar/Navbar";
 import ProfileNavbar from './components/profileNavbar/profileNavbar';
 import Profile from './components/profile/profile';
-import ChatApp from './components/messages/Chat';
 import Forum from './components/forums/forums';
-
+import jobs from './components/jobs/jobs';
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -48,7 +47,6 @@ function App() {
             <Switch>
               <Route path="/profile" component={Profile} />
               <Route path="/forums" component={Forum}/>
-              <Route path="/Chat" component={ChatApp}/>
               <Route path="/dashboard" component={Dashboard} />
               <Route path="/profileNavbar" component={ProfileNavbar} />
               <Route path='/login' component={Login}/>
@@ -60,6 +58,7 @@ function App() {
               <Route path='/privacyPolicy' component={privacyPolicy}/>
               <Route path='/Register' component={Register}/>
               <Route path='/navbar' component={Navbar}/>
+              <Route path='/jobs' component={jobs}/>
             </Switch>
           </Router>
       </Provider>
