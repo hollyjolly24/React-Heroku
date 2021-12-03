@@ -20,6 +20,7 @@ import ProfileNavbar from './components/profileNavbar/profileNavbar';
 import Profile from './components/profile/profile';
 import Forum from './components/forums/forums';
 import jobs from './components/jobs/jobs';
+import profileHome from './components/profileHome/profileHome';
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -59,6 +60,7 @@ function App() {
               <Route path='/Register' component={Register}/>
               <Route path='/navbar' component={Navbar}/>
               <Route path='/jobs' component={jobs}/>
+              <Route path='/profileHome' component={profileHome}/>
             </Switch>
           </Router>
       </Provider>

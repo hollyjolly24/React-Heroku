@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './aboutUs.module.css';
+import aboutStyles from './aboutUs.module.css';
 import Footer from '../footer/footer';
 import Navbar from '../navbar/Navbar';
 
@@ -7,49 +7,55 @@ function aboutUs () {
 
     return (
         <>
-        <Navbar/>
-        <div>
-            <header className={styles.learnHeader}>WHY wait until graduation to start your career?</header>
-            <h1 className={styles.aboutUsList}> Explore Opportunities</h1>
-            <h2 className={styles.aboutUsList}> Mentorship from alumni</h2>
-            <h3 className={styles.aboutUsList}>Connect with students</h3>
-
-            <p className={styles.students}>
-                CareerLift will help YOU find your path.
-            </p>
-            <button className={styles.howItWorks}>
-                How it Works 
-            </button>
-            <h4 className={styles.learnHeader}>
-                Information for Interested Universities
-            </h4>
-            <ol className={styles.list}>
-            <li className={styles.one}>Contact Us!&nbsp;&nbsp;</li>
-            <p className={styles.info}>
-                Get started connecting your students. 
-                Reach out to a CareerLift team member today.
-            </p>
-            
-
-
-            <li className={styles.two}>Customize It!</li>
-            <p className={styles.info}>
-                Here at CareerLift, we believe every student body is unique.
-                We customize each version of CareerLift to fit your university.
-            </p>
         
+        <Navbar/>
+        <div className={aboutStyles.aboutusBackground}>
 
-            <li className={styles.three}>Launch!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-            <p className={styles.info}>
-                After customization, we will help you launch CareerLift at your university.
+        <img 
+            src="https://images.unsplash.com/photo-1519070994522-88c6b756330e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGZydXN0cmF0ZWQlMjBzdHVkZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" 
+            alt="student"
+            width="550"
+            height="600"
+        />
+            <div className={aboutStyles.why}>
+                Why
+            </div>
+            <div className={aboutStyles.career}>
+                CareerLift?
+            </div>
+
+            <p className={aboutStyles.whyPara}>
+                CareerLift is a social media application <br/>
+                started by students for students.
             </p>
-            
-            </ol>
-    
-        </div>
-        <Footer/>
+          
+            <h1 className={aboutStyles.explore}>
+                Explore
+            </h1>
+            <p className={aboutStyles.para}>
+                After creating an account, students can browse local jobs and save them to their CareerLift account 
+                or even head directly to the job posting to apply.
+            </p>
+            <h2 className={aboutStyles.mentor}>
+                Mentor
+            </h2>
+            <p className={aboutStyles.para}>
+                CareerLift offers mentorship opportunities through forums designed for students, alumni, and professors. 
+                A student can create or or join a forum about job hunting, what courses to take, advice on majors... the possibilities are endless.
+            </p>
+            <h3 className={aboutStyles.connect}>
+                Connect
+            </h3>
+                <p className={aboutStyles.para}>
+                    CareerLift is a social media application for students, alumni, and professors. 
+                    A place where the career world meets academia. 
+                </p>
+                <Footer/>
+            </div>
+       
         </>
     )
 }
 
 export default aboutUs;
+

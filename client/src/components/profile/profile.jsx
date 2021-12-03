@@ -69,7 +69,6 @@ const Profile = () => {
                 type="submit"
             />
         </form>
-    );
             <Footer/>
         </>
     );

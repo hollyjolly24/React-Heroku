@@ -13,6 +13,9 @@ function MainSection() {
         <img 
           src="https://cdn.pixabay.com/photo/2018/12/10/10/21/earth-3866609_1280.jpg" 
           alt="imageHomePage"
+          width="1440"
+          height= "700"
+          margin= "0"
           />
             <div className={mainSectionStyles.rotatingText}>
               <div className={mainSectionStyles.rotatingTextContent}>

@@ -3,6 +3,8 @@ import contactUsStyles from './contact.module.css';
 import emailjs from "emailjs-com"
 import Footer from "../footer/footer";
 import Navbar from "../navbar/Navbar";
+import { faMailBulk} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Contact() {
     const form = useRef();
@@ -22,11 +24,14 @@ export default function Contact() {
     return(   
         <div className={contactUsStyles.bGround}>
             <Navbar/>
+
         <div className={contactUsStyles.contactForm}>
 
         <h1 className={contactUsStyles.contactHeader}>
+        <FontAwesomeIcon icon={faMailBulk} />             
             Contact Us!
         </h1>
+
         <h2 className={contactUsStyles.contactInfo}>
             Please fill in your information and a CareerLift team member will reach out.
         </h2>

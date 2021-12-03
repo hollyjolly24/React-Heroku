@@ -15,6 +15,11 @@ const profileRouter = require('./routes/api/profiles');
 
 
 
+
+
+
+
+
 //forums post
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -87,6 +92,7 @@ require("./config/passport")(passport);
 // Routes
 app.use("/api/users", users);
 
+
 //Static assets need served if in Heroku production.
 if(process.env.NODE_ENV === "production"){
 
@@ -102,6 +108,18 @@ if(process.env.NODE_ENV === "production"){
 }
 
 app.use('/profiles', profileRouter);
+
+
+
+
+
+
+
+
+
+
+
+
 
 const port = process.env.PORT || 5000; // process.env.port is Heroku's port 
 

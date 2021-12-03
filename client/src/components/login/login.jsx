@@ -7,6 +7,8 @@ import Footer from "../footer/footer";
 import loginStyles from "./login.module.css";
 import { Link } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
+import { faSignInAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Login extends Component {
   constructor() {
@@ -21,13 +23,13 @@ class Login extends Component {
   componentDidMount() {
     // If logged in and user navigates to Login page redirect them to dashboard
     if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/dashboard");
+      this.props.history.push("/profileHome");
     }
   }
 
 componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
-      this.props.history.push("/dashboard"); // push user to dashboard when they login
+      this.props.history.push("/profileHome"); // push user to dashboard when they login
     }
 if (nextProps.errors) {
       this.setState({
@@ -54,6 +56,7 @@ return (
     <div className={loginStyles.contactForm}>
 
 <h1 className={loginStyles.contactHeader}>
+<FontAwesomeIcon icon={faSignInAlt} /> 
   Login!
 </h1>
 <h2 className={loginStyles.contactInfo}>
@@ -104,8 +107,8 @@ return (
       </button>
       
   </form>
-  <p>
-    Don't have an account? <Link to="/signup" className={loginStyles.signupBtn}>Signup</Link>
+  <p className={loginStyles.linktoSignup}>
+    Don't have an account? <Link to="/signup" className={loginStyles.linktoSignup}>Signup Here</Link>
   </p>
   </div>
   <Footer/>

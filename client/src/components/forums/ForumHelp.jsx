@@ -4,7 +4,7 @@ import ScrollToBottom from "react-scroll-to-bottom";
 import ProfileNavbar from "../profileNavbar/profileNavbar";
 import Footer from "../footer/footer";
 
-function Chat({ socket, username, forum }) {
+function Forum({ socket, username, forum }) {
   const [currentMessage, setCurrentMessage] = useState("");
   const [messageList, setMessageList] = useState([]);
 
@@ -37,7 +37,7 @@ function Chat({ socket, username, forum }) {
       <ProfileNavbar/>
     <div className="chat-window">
       <div className="chat-header">
-        <p>Live Chat</p>
+        <p>Live Forum</p>
       </div>
       <div className="chat-body">
         <ScrollToBottom className="message-container">
@@ -81,6 +81,6 @@ function Chat({ socket, username, forum }) {
   );
 }
 
-export default Chat;
+export default Forum;
 
 

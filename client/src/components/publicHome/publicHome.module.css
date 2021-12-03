@@ -11,14 +11,6 @@
    
 }
 
-img{
-  width:1435px;
-  height: 700px;
-  margin: 0px;
-  border-top: 1px solid white;
-
-}
-
 
 
   .rotatingTextAdjective {
@@ -137,7 +129,7 @@ img{
 
   .learnMore:hover{
       font-size: 30px;
-      background-color: #202e54;
+      background-color: #fe5e54;
       padding-right: 24px;
       padding-left:8px;
       text-decoration: none;
