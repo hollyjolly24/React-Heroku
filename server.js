@@ -6,11 +6,9 @@ const path = require('path');
 const users = require("./routes/api/users");
 const app = express();
 const multer = require("multer");
-const postRoute = require("./routes/posts");
 const router = express.Router();
-const path = require("path");
+const forumRoute = require("./routes/api/forums");
 
-const formRoute = require("./routes/api/forums");
 
 //forums post
 const storage = multer.diskStorage({
@@ -30,7 +28,6 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
     console.error(error);
   }
 });
-app.use("/api/posts", postRoute);
 
 // Bodyparser middleware
 app.use(
@@ -77,7 +74,6 @@ mongoose.connect(db, { useNewUrlParser: true }
     });
   });
 
-  app.use("/api/forums", forumRoute);
 
 // Passport middleware
 app.use(passport.initialize());
@@ -85,6 +81,8 @@ app.use(passport.initialize());
 require("./config/passport")(passport);
 // Routes
 app.use("/api/users", users);
+app.use("/api/forums", forumRoute);
+
 //Static assets need served if in Heroku production.
 if(process.env.NODE_ENV === "production"){
 

@@ -19,7 +19,7 @@ import Navbar from "./components/navbar/Navbar";
 import ProfileNavbar from './components/profileNavbar/profileNavbar';
 import Profile from './components/profile/profile';
 import ChatApp from './components/messages/Chat';
-import Forums from './components/forums/forums';
+import Forum from './components/forums/forums';
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -47,7 +47,7 @@ function App() {
       <Router>
             <Switch>
               <Route path="/profile" component={Profile} />
-              <Route path="/forums" component={Forums}/>
+              <Route path="/forums" component={Forum}/>
               <Route path="/Chat" component={ChatApp}/>
               <Route path="/dashboard" component={Dashboard} />
               <Route path="/profileNavbar" component={ProfileNavbar} />

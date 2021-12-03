@@ -1,14 +1,14 @@
 const router = require("express").Router();
-const Forum = require("../models/Forum");
-const User = require("../models/User");
+const Forum = require("../../models/Forum");
+const User = require("../../models/User");
 
 //create a forum
 
-router.forum("/", async (req, res) => {
-  const newPost = new Forum(req.body);
+router.post("/", async (req, res) => {
+  const newForum = new Forum(req.body);
   try {
-    const savedPost = await newPost.save();
-    res.status(200).json(savedPost);
+    const savedForum = await newForum.save();
+    res.status(200).json(savedForum);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -75,13 +75,13 @@ router.get("/:id", async (req, res) => {
 router.get("/timeline/:userId", async (req, res) => {
   try {
     const currentUser = await User.findById(req.params.userId);
-    const userPosts = await Forum.find({ userId: currentUser._id });
-    const friendPosts = await Promise.all(
+    const userForums = await Forum.find({ userId: currentUser._id });
+    const friendForums = await Promise.all(
       currentUser.followings.map((friendId) => {
         return Forum.find({ userId: friendId });
       })
     );
-    res.status(200).json(userPosts.concat(...friendPosts));
+    res.status(200).json(userForums.concat(...friendForums));
   } catch (err) {
     res.status(500).json(err);
   }
