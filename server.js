@@ -5,12 +5,32 @@ const passport = require("passport");
 const path = require('path');
 const users = require("./routes/api/users");
 const app = express();
-const http = require("http");
-const cors = require("cors");
-const { Server } = require("socket.io");
-const server = http.createServer(app);
+const multer = require("multer");
+const postRoute = require("./routes/posts");
+const router = express.Router();
+const path = require("path");
 
-//setupport for Heroku or local 
+const formRoute = require("./routes/api/forums");
+
+//forums post
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "public/images");
+  },
+  filename: (req, file, cb) => {
+    cb(null, req.body.name);
+  },
+});
+
+const upload = multer({ storage: storage });
+app.post("/api/upload", upload.single("file"), (req, res) => {
+  try {
+    return res.status(200).json("File uploded successfully");
+  } catch (error) {
+    console.error(error);
+  }
+});
+app.use("/api/posts", postRoute);
 
 // Bodyparser middleware
 app.use(
@@ -26,8 +46,13 @@ mongoose.connect(db, { useNewUrlParser: true }
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
 
+  const http = require("http");
+  const cors = require("cors");
+  const { Server } = require("socket.io");
   app.use(cors());
   
+  const server = http.createServer(app);
+
   const io = new Server(server, {
     cors: {
       origin: "http://localhost:3000",
@@ -38,13 +63,13 @@ mongoose.connect(db, { useNewUrlParser: true }
   io.on("connection", (socket) => {
     console.log(`User Connected: ${socket.id}`);
   
-    socket.on("join_room", (data) => {
+    socket.on("join_forum", (data) => {
       socket.join(data);
-      console.log(`User with ID: ${socket.id} joined room: ${data}`);
+      console.log(`User with ID: ${socket.id} joined forum: ${data}`);
     });
   
     socket.on("send_message", (data) => {
-      socket.to(data.room).emit("receive_message", data);
+      socket.to(data.forum).emit("receive_message", data);
     });
   
     socket.on("disconnect", () => {
@@ -52,7 +77,7 @@ mongoose.connect(db, { useNewUrlParser: true }
     });
   });
 
-
+  app.use("/api/forums", forumRoute);
 
 // Passport middleware
 app.use(passport.initialize());

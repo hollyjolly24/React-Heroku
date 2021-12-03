@@ -17,16 +17,16 @@ function Navbar() {
         <nav class = 'nav' className={navbarstyles.nav}>
           <div className={navbarstyles.topNav}>
             <div className={navbarstyles.logo}>
-                <Link to='/publicHome' className={navbarstyles.career} onclick={() => history.push("/publicHome")}>
+                <Link to='/' className={navbarstyles.career} onclick={() => history.push("/publicHome")}>
                   Career
                 </Link>
-                <Link to='/publicHome' className={navbarstyles.lift} onclick={() => history.push("/publicHome")}>
+                <Link to='/' className={navbarstyles.lift} onclick={() => history.push("/publicHome")}>
                   Lift
                 </Link>
             </div>
 
         <div className={navbarstyles.links}>
-          <Link to='/publicHome' className={navbarstyles.mainSection} onclick={() => history.push("/publicHome")}>
+          <Link to='/' className={navbarstyles.mainSection} onclick={() => history.push("/publicHome")}>
           <FontAwesomeIcon icon={faHome} />             
             Home
           </Link>   

@@ -23,7 +23,7 @@ class ProfileNavbar extends Component {
   render() {
       return (
         <>
-        
+      
           <nav class = 'nav' className={navbarstyles.nav}>
             <div className={navbarstyles.topNav}>
               <div className={navbarstyles.logo}>
@@ -40,7 +40,7 @@ class ProfileNavbar extends Component {
           <FontAwesomeIcon icon={faUser} />             
               Profile
             </Link>  
-          <Link to='/chatHelp' className={navbarstyles.message} onclick={() => history.push("/chatHelp")}>
+          <Link to='/Chat' className={navbarstyles.message} onclick={() => history.push("/Chat")}>
           <FontAwesomeIcon icon={faComments} />             
              Messages
             </Link>  

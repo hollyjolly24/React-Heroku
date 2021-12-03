@@ -18,7 +18,7 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 import Navbar from "./components/navbar/Navbar";
 import ProfileNavbar from './components/profileNavbar/profileNavbar';
 import Profile from './components/profile/profile';
-import ChatApp from './components/messages/chatHelp';
+import ChatApp from './components/messages/Chat';
 import Forums from './components/forums/forums';
 
 // Check for token to keep user logged in
@@ -48,7 +48,7 @@ function App() {
             <Switch>
               <Route path="/profile" component={Profile} />
               <Route path="/forums" component={Forums}/>
-              <Route path="/chatHelp" component={ChatApp}/>
+              <Route path="/Chat" component={ChatApp}/>
               <Route path="/dashboard" component={Dashboard} />
               <Route path="/profileNavbar" component={ProfileNavbar} />
               <Route path='/login' component={Login}/>
