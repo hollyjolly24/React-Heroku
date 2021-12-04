@@ -23,7 +23,9 @@ import jobs from './components/profilePages/jobs/jobs';
 import profileHome from './components/profilePages/profileHome/profileHome';
 import profileTerms from './components/profilePages/profileTerms/profileTerms';
 import profilePolicy from './components/profilePages/profilePolicy/profilePolicy';
-import profileNavbar from './components/profilePages/profileNavbar/profileNavbar';
+import ProfileNavbar from './components/profilePages/profileNavbar/profileNavbar';
+import ProfileFooter from './components/profilePages/profileFooter/profileFooter';
+import ProfileContact from './components/profilePages/profileContactUs/profileContactUs';
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -39,7 +41,7 @@ if (localStorage.jwtToken) {
     // Logout user
     store.dispatch(logoutUser());
     // Redirect to login
-    window.location.href = "./publicHome";
+    window.location.href = "/";
   }
 }
 
@@ -61,15 +63,17 @@ function App() {
               <Route path='/navbar' component={Navbar}/>
               
 
+            
 
-              <Route path='profileNavbar' component={profileNavbar}/>
+              <Route path='/profileNavbar' component={ProfileNavbar}/>
               <Route path="/profile" component={Profile} />
               <Route path='/profileHome' component={profileHome}/>
               <Route path='/profileTerms' component={profileTerms}/>
               <Route path='/profilePrivacy' component={profilePolicy}/>
-              
+              <Route path='/profileFooter' component={ProfileFooter}/>
               <Route path='/jobs' component={jobs}/>
               <Route path="/forums" component={Forum}/>
+              <Route path='/profileContactUs'component={ProfileContact}/>
 
 
 

@@ -12,7 +12,7 @@ import { logoutUser } from "../../../actions/authActions";
 import {faUser,faSignOutAlt,faUsers, faBriefcase} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-class profileNavbar extends Component {
+class ProfileNavbar extends Component {
   
   onLogoutClick = e => {
     e.preventDefault();
@@ -46,7 +46,7 @@ class profileNavbar extends Component {
               Forums
             </Link>   
 
-            <Link to='/jobs' className={navbarstyles.forum} onclick={() => history.push("/jobs")}>
+            <Link to='/jobs' className={navbarstyles.job} onclick={() => history.push("/jobs")}>
             <FontAwesomeIcon icon={faBriefcase} />             
               Jobs
             </Link>   
@@ -64,7 +64,7 @@ class profileNavbar extends Component {
     }
   }
   
-  profileNavbar.propTypes = {
+  ProfileNavbar.propTypes = {
     logoutUser: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired
   };
@@ -74,4 +74,4 @@ class profileNavbar extends Component {
   export default connect(
     mapStateToProps,
     { logoutUser }
-  )(profileNavbar);
+  )(ProfileNavbar);

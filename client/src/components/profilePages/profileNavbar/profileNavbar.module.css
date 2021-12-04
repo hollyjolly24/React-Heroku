@@ -1,4 +1,13 @@
-.logo{
+
+.nav {
+    height: 70px;
+    background-color: #2e2B59 ;
+    border-bottom: 1px solid #ffffff;
+
+
+  }
+  
+  .logo{
     color: #fff;
     justify-self: start;
     margin-left: 50px;
@@ -36,7 +45,7 @@
   
   }
   
-  .mainSection, .aboutUs, .login, .signup {
+  .profile, .forum, .job, .logout {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: right;
@@ -46,23 +55,26 @@
   
   }
   
-  .mainSection:hover {
+  .profile:hover {
     color: #ACB0A3;
     font-size: 25px;
   
   }
-  .aboutUs:hover{
+  .forum:hover{
     color: #ACB0A3;
     font-size: 25px;
   
   }
-   .login:hover{
+   .job:hover{
     color: #ACB0A3;
     font-size: 25px;
   
   }
-   .signup:hover{
+   .logout:hover{
     color: #ACB0A3;
     font-size: 25px;
   
   }
+  
+  
+  

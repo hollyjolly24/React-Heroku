@@ -1,7 +1,8 @@
 import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./ForumHelp";
-
+import ProfileNavbar from "../profileNavbar/profileNavbar";
+import ProfileFooter from "../profileFooter/profileFooter";
 
 
 const socket = io.connect("http://localhost:5000");
@@ -19,6 +20,7 @@ function ChatApp() {
 
   return (
     <>
+    <ProfileNavbar/>
     <div className="App">
       {!showChat ? (
         <div className="joinChatContainer">
@@ -43,6 +45,7 @@ function ChatApp() {
         <Chat socket={socket} username={username} forum={forum} />
       )}
     </div>
+    <ProfileFooter/>
     </>
   );
 }

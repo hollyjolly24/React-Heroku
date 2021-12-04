@@ -1,9 +1,12 @@
 import React from "react";
 import privacyPolicyStyles from './profilePolicy.module.css';
+import ProfileNavbar from "../profileNavbar/profileNavbar";
+import ProfileFooter from "../profileFooter/profileFooter";
 
 function profilePolicy() {
     return(
         <>
+        <ProfileNavbar/>
         <h1 className={privacyPolicyStyles.Pheader}>
             Privacy Policy
         </h1>
@@ -162,6 +165,7 @@ Phone/mobile number
 
 
             </p>
+            <ProfileFooter/>
         </>
     )
 

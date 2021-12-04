@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-
 import axios from 'axios';
+import ProfileNavbar from "../profileNavbar/profileNavbar";
+import ProfileFooter from "../profileFooter/profileFooter";
 
 
 const Profile = () => {
@@ -40,6 +41,7 @@ const Profile = () => {
 
     return(
         <>
+        <ProfileNavbar/>
             <form onSubmit={handleSubmit} encType='multipart/form-data'>
             <input 
                 type="file" 
@@ -67,6 +69,7 @@ const Profile = () => {
                 type="submit"
             />
         </form>
+        <ProfileFooter/>
         </>
     );
 }

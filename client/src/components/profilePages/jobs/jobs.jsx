@@ -1,9 +1,13 @@
 import React from 'react';
 import jobStyles from "./jobs.module.css";
+import ProfileNavbar from "../profileNavbar/profileNavbar";
+import ProfileFooter from '../profileFooter/profileFooter';
+
 
 export default function jobs(){
     return(
       <>
+      <ProfileNavbar/>
       <div className={jobStyles.aboutusBackground}>
 <body>
   <header>
@@ -27,6 +31,7 @@ export default function jobs(){
   <script src="./job.js"></script>
 </body>
 </div>
+<ProfileFooter/>
 </>
   );
 }
