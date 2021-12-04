@@ -1,0 +1,23 @@
+.footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 0;
+    height: 50px;
+    background-color: #292D59;
+
+
+}
+
+.terms,.privacy,.contact{
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.terms:hover,.contact:hover,.privacy:hover{
+    color: #ACB0A3;
+}

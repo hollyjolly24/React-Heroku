@@ -5,14 +5,14 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import navbarstyles from './profileNavbar.module.css'
-import history from '../history/history';
+import history from '../../history/history';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { logoutUser } from "../../actions/authActions";
+import { logoutUser } from "../../../actions/authActions";
 import {faUser,faSignOutAlt,faUsers, faBriefcase} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-class ProfileNavbar extends Component {
+class profileNavbar extends Component {
   
   onLogoutClick = e => {
     e.preventDefault();
@@ -23,14 +23,14 @@ class ProfileNavbar extends Component {
   render() {
       return (
         <>
-      
+  
           <nav class = 'nav' className={navbarstyles.nav}>
             <div className={navbarstyles.topNav}>
               <div className={navbarstyles.logo}>
-                  <Link to='/Dashboard' className={navbarstyles.career} onclick={() => history.push("/Dashboard")}>
+                  <Link to='/profileHome' className={navbarstyles.career} onclick={() => history.push("/profileHome")}>
                     Career
                   </Link>
-                  <Link to='/Dashboard' className={navbarstyles.lift} onclick={() => history.push("/Dashboard")}>
+                  <Link to='/profileHome' className={navbarstyles.lift} onclick={() => history.push("/profileHome")}>
                     Lift
                   </Link>
               </div>
@@ -64,7 +64,7 @@ class ProfileNavbar extends Component {
     }
   }
   
-  ProfileNavbar.propTypes = {
+  profileNavbar.propTypes = {
     logoutUser: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired
   };
@@ -74,4 +74,4 @@ class ProfileNavbar extends Component {
   export default connect(
     mapStateToProps,
     { logoutUser }
-  )(ProfileNavbar);
+  )(profileNavbar);

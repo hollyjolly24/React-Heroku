@@ -1,5 +1,5 @@
 import React from 'react';
-import history from '../history/history';
+import history from '../../history/history';
 import { Link } from 'react-router-dom';
 import mainSectionStyles from './publicHome.module.css';
 import Footer from '../footer/footer';
