@@ -1,6 +1,7 @@
 import React from 'react';
 import profileNavbar from '../profileNavbar/profileNavbar';
-import profileFooter from '../../profileFooter/profileFooter';
+import profileFooter from '../profileFooterprofileFooter';
+
 
 export default function profileHome(){
     return(

@@ -2,7 +2,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./ForumHelp";
 import profileNavbar from "../profileNavbar/profileNavbar";
-import profileFooter from "../../profileFooter/profileFooter";
+import profileFooter from "../profileFooter/profileFooter";
 
 
 

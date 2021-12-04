@@ -1,6 +1,6 @@
 import React from 'react';
 import footerStyles from './footer.module.css';
-import history from '../history/history';
+import history from "../../history/history"
 import { Link } from 'react-router-dom';
 //import DOMPurify from 'dompurify';
 //<div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(dirtyContent) }} />

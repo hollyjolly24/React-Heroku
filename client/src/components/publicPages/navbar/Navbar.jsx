@@ -5,7 +5,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import navbarstyles from './navbar.module.css'
-import history from '../history/history';
+import history from '../../history/history';
 import { faHome,faUserPlus, faSignInAlt, faInfoCircle} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
