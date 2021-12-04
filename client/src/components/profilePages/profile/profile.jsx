@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from 'axios';
 import ProfileNavbar from "../profileNavbar/profileNavbar";
 import ProfileFooter from "../profileFooter/profileFooter";
-
+import profileStyles from "./profile.module.css"
 
 const Profile = () => {
     const [newProfile, setNewProfile] = useState(
@@ -41,35 +41,61 @@ const Profile = () => {
 
     return(
         <>
+        <div className={profileStyles.bGround}>
         <ProfileNavbar/>
-            <form onSubmit={handleSubmit} encType='multipart/form-data'>
-            <input 
-                type="file" 
-                accept=".png, .jpg, .jpeg"
-                name="photo"
-                onChange={handlePhoto}
-            />
+        <div className={profileStyles.contactForm}>
 
-            <input 
-                type="text"
-                placeholder="name"
-                name="name"
-                value={newProfile.name}
-                onChange={handleChange}
-            />
+        <h1 className={profileStyles.contactHeader}>
+            Update Your Profile!
+        </h1>
 
-            <input 
-                type="date"
-                name="birthdate"
-                value={newProfile.date}
-                onChange={handleChange}
-            />
+        <h2 className={profileStyles.contactInfo}>
+            You can add an image, update your name, change your birthday.
+        </h2>
+            <form 
+            className={profileStyles.contactFormBody}
+            onSubmit={handleSubmit}
+            encType='multipart/form-data'>
+            <p>
+             <input type="text" name="nName" className={profileStyles.name} placeholder="Name"/>
+            </p>
 
-            <input 
-                type="submit"
+            <input
+            type="file"
+            accept=".png, .jpg, .jpeg"
+            name="photo"
+            onChange={handlePhoto}
             />
-        </form>
-        <ProfileFooter/>
+            <p>
+            <input 
+            type="text"
+            placeholder="name"
+            name="name"
+            value={newProfile.name}
+            onChange={handleChange}
+        />
+        </p>
+
+        <p>
+
+        <input 
+            type="date"
+            name="birthdate"
+            value={newProfile.date}
+            onChange={handleChange}
+        />
+        </p>
+
+    
+
+                <button name="submit" className={profileStyles.submitBtn}>
+                    Submit
+                </button>
+                
+            </form>
+            </div>
+            <ProfileFooter/>
+            </div> 
         </>
     );
 }

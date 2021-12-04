@@ -1,8 +1,8 @@
 
 import React, { useEffect, useState } from "react";
 import ScrollToBottom from "react-scroll-to-bottom";
-import ProfileNavbar from "../profileNavbar/profileNavbar";
-import ProfileFooter from "../profileFooter/profileFooter";
+
+import forumstyles from "./forum.module.css"
 
 function Forum({ socket, username, forum }) {
   const [currentMessage, setCurrentMessage] = useState("");
@@ -34,25 +34,23 @@ function Forum({ socket, username, forum }) {
 
   return (
     <>
-        <ProfileNavbar/>
-
-    <div className="chat-window">
-      <div className="chat-header">
+    <div className={forumstyles.background}>
+      <div >
         <p>Live Forum</p>
       </div>
-      <div className="chat-body">
-        <ScrollToBottom className="message-container">
+      <div>
+        <ScrollToBottom>
           {messageList.map((messageContent) => {
             return (
               <div
-                className="message"
+                className={forumstyles.contain}
                 id={username === messageContent.author ? "you" : "other"}
               >
                 <div>
-                  <div className="message-content">
+                  <div >
                     <p>{messageContent.message}</p>
                   </div>
-                  <div className="message-meta">
+                  <div>
                     <p id="time">{messageContent.time}</p>
                     <p id="author">{messageContent.author}</p>
                   </div>
@@ -62,11 +60,11 @@ function Forum({ socket, username, forum }) {
           })}
         </ScrollToBottom>
       </div>
-      <div className="chat-footer">
+      <div className={forumstyles.message1}>
         <input
           type="text"
           value={currentMessage}
-          placeholder="Hey..."
+          placeholder="Say Hi!."
           onChange={(event) => {
             setCurrentMessage(event.target.value);
           }}
@@ -77,7 +75,6 @@ function Forum({ socket, username, forum }) {
         <button onClick={sendMessage}>&#9658;</button>
       </div>
     </div>
-    <ProfileFooter/>
     </>
   );
 }

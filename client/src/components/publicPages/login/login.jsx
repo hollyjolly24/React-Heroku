@@ -50,20 +50,20 @@ this.props.loginUser(userData); // since we handle the redirect within our compo
   };
 render() {
     const { errors } = this.state;
-return (
-  <div className={loginStyles.bGround}>
-    <Navbar/>
-    <div className={loginStyles.contactForm}>
+    return (
+      <div className={loginStyles.bGround}>
+        <Navbar/>
+        <div className={loginStyles.contactForm}>
 
-<h1 className={loginStyles.contactHeader}>
-<FontAwesomeIcon icon={faSignInAlt} /> 
-  Login!
-</h1>
-<h2 className={loginStyles.contactInfo}>
-  Please enter your login credentials.
-</h2>
-  <form noValidate onSubmit={this.onSubmit} className={loginStyles.contactFormBody}>
-      <p>
+    <h1 className={loginStyles.contactHeader}>
+    <FontAwesomeIcon icon={faSignInAlt} /> 
+      Login!
+    </h1>
+    <h2 className={loginStyles.contactInfo}>
+      Please enter your login credentials.
+    </h2>
+      <form noValidate onSubmit={this.onSubmit} className={loginStyles.contactFormBody}>
+          <p>
           <input 
             onChange={this.onChange}
             value={this.state.email}

@@ -3,35 +3,42 @@ import jobStyles from "./jobs.module.css";
 import ProfileNavbar from "../profileNavbar/profileNavbar";
 import ProfileFooter from '../profileFooter/profileFooter';
 
+/*
+NEED TO IMPLEMENT JOB SEARCH
+
+*/
 
 export default function jobs(){
     return(
       <>
-      <ProfileNavbar/>
-      <div className={jobStyles.aboutusBackground}>
-<body>
-  <header>
-    <div class="container">
-      <h1>Job Search App</h1>
-      <h2>Find your perfect job today!</h2>
-      <form id="search-form">
-          <input type="text" class="form-control" placeholder="Job Title" id="search"/>
-          <input type="text" class="form-control" placeholder="Location" id="location"/>
-          <button class="btn btn-block btn-primary">Search</button>
-        </form>
-    </div>
-  </header>
-  <main>
-    <div class="container">
-          <div class="loading-element">
-          </div>
-          <div class="result-container"></div>        
-    </div>
-  </main>
-  <script src="./job.js"></script>
-</body>
-</div>
-<ProfileFooter/>
+        <div className={jobStyles.bGround}>
+        <ProfileNavbar/>
+        <div className={jobStyles.contactForm}>
+
+        <h1 className={jobStyles.contactHeader}>
+            Find a Job Today!
+        </h1>
+
+        <h2 className={jobStyles.contactInfo}>
+            Please fill out the job title and location
+        </h2>
+            <form className={jobStyles.contactFormBody}>
+            <p>
+                    <input type="text" name="job Title" className={jobStyles.title} placeholder="Job Title"></input>
+                </p>
+
+                <p>
+                    <input type="text" name="location" className={jobStyles.location} placeholder="Location"></input>
+                </p>
+
+                <button name="submit" className={jobStyles.submitBtn}>
+                    Submit
+                </button>
+                
+            </form>
+            </div>
+            <ProfileFooter/>
+            </div> 
 </>
   );
 }

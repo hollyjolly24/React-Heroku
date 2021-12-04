@@ -1,0 +1,12 @@
+.homescreenbackground {
+    background-color: #292D59;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    z-index: -999;
+   
+}
+
