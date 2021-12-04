@@ -1,8 +1,6 @@
 
 import React, { useEffect, useState } from "react";
 import ScrollToBottom from "react-scroll-to-bottom";
-import profileFooter from "../profileFooter/profileFooter";
-import profileNavbar from "../profileNavbar/profileNavbar";
 
 function Forum({ socket, username, forum }) {
   const [currentMessage, setCurrentMessage] = useState("");
@@ -34,7 +32,6 @@ function Forum({ socket, username, forum }) {
 
   return (
     <>
-    <profileNavbar/>
 
     <div className="chat-window">
       <div className="chat-header">
@@ -77,7 +74,6 @@ function Forum({ socket, username, forum }) {
         <button onClick={sendMessage}>&#9658;</button>
       </div>
     </div>
-    <profileFooter/>
     </>
   );
 }

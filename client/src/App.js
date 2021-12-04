@@ -17,14 +17,13 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 import Navbar from './components/publicPages/navbar/Navbar';
 
 
-import profileNavbar from './components/profilePages/profileNavbar/profileNavbar';
 import Profile from './components/profilePages/profile/profile';
 import Forum from './components/profilePages/forums/forums';
 import jobs from './components/profilePages/jobs/jobs';
 import profileHome from './components/profilePages/profileHome/profileHome';
 import profileTerms from './components/profilePages/profileTerms/profileTerms';
 import profilePolicy from './components/profilePages/profilePolicy/profilePolicy';
-import profileFooter from './components/profilePages/profileFooter/profileFooter';
+import profileNavbar from './components/profilePages/profileNavbar/profileNavbar';
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -63,14 +62,13 @@ function App() {
               
 
 
-
+              <Route path='profileNavbar' component={profileNavbar}/>
               <Route path="/profile" component={Profile} />
               <Route path='/profileHome' component={profileHome}/>
               <Route path='/profileTerms' component={profileTerms}/>
               <Route path='/profilePrivacy' component={profilePolicy}/>
-              <Route path='/profileFooter' component={profileFooter}/>
+              
               <Route path='/jobs' component={jobs}/>
-              <Route path="/profileNavbar" component={profileNavbar} />
               <Route path="/forums" component={Forum}/>
 
 

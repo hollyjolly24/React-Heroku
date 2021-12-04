@@ -1,7 +1,5 @@
 import React from 'react';
 import profileNavbar from '../profileNavbar/profileNavbar';
-import profileFooter from '../profileFooterprofileFooter';
-
 
 export default function profileHome(){
     return(
@@ -17,7 +15,6 @@ export default function profileHome(){
         <header>
             Welcome!
         </header>
-        <profileFooter/>
         </>
     )
 }

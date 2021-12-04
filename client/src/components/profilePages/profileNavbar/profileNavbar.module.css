@@ -1,13 +1,4 @@
-
-.nav {
-    height: 70px;
-    background-color: #2e2B59 ;
-    border-bottom: 1px solid #ffffff;
-
-
-  }
-  
-  .logo{
+.logo{
     color: #fff;
     justify-self: start;
     margin-left: 50px;
@@ -75,6 +66,3 @@
     font-size: 25px;
   
   }
-  
-  
-  

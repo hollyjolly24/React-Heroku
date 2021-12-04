@@ -1,8 +1,7 @@
 import React, { useRef} from "react";
 import contactUsStyles from './contact.module.css';
 import emailjs from "emailjs-com"
-import profileFooter from "../profileFooter/profileFooter";
-import profileNavbar from "../profileNavbar/profileNavbar";
+
 import { faMailBulk} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -23,7 +22,6 @@ export default function Contact() {
 
     return(   
         <div className={contactUsStyles.bGround}>
-            <profileNavbar/>
 
         <div className={contactUsStyles.contactForm}>
 
@@ -59,7 +57,6 @@ export default function Contact() {
                 
             </form>
             </div>
-            <profileFooter/>
             </div> 
       
 

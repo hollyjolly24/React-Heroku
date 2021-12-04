@@ -1,8 +1,6 @@
 import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./ForumHelp";
-import profileNavbar from "../profileNavbar/profileNavbar";
-import profileFooter from "../profileFooter/profileFooter";
 
 
 
@@ -21,7 +19,6 @@ function ChatApp() {
 
   return (
     <>
-    <profileNavbar/>
     <div className="App">
       {!showChat ? (
         <div className="joinChatContainer">
@@ -46,7 +43,6 @@ function ChatApp() {
         <Chat socket={socket} username={username} forum={forum} />
       )}
     </div>
-    <profileFooter/>
     </>
   );
 }
